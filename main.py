@@ -121,7 +121,7 @@ retrieval_chain = (
 # qa_chain = RetrievalQA.from_chain_type(llm=llm, chain_type="stuff", retriever=retriever)
 
 
-query = "มีหนังสือเกียวกับคณิตศาสตร์ไหม"
+query = "มีหนังสือเกียวกับภาษาไทยไหม"
 context = query_documents(query)
 print("Context:\n", context)
 response = retrieval_chain.invoke(f"{query}\nข้อมูลที่เกี่ยวข้อง:\n{context}")
